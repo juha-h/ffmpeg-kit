@@ -92,8 +92,8 @@ get_library_source() {
     SOURCE_TYPE="TAG"
     ;;
   libaom)
-    SOURCE_REPO_URL="https://github.com/arthenica/libaom"
-    SOURCE_ID="v3.6.1"
+    SOURCE_REPO_URL="https://aomedia.googlesource.com/aom"
+    SOURCE_ID="v3.8.1"
     SOURCE_TYPE="TAG"
     ;;
   libass)
