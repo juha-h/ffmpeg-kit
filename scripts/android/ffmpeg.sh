@@ -412,6 +412,9 @@ else
   echo -e "\nINFO: Enabled custom ffmpeg-kit protocols\n" 1>>"${BASEDIR}"/build.log 2>&1
 fi
 
+# 3. Patch ffmpeg/libavdevice/android_camera.c
+sed -i -e 's|av_log(context, AV_LOG_INFO, "Android camera capture session was closed.|//|' ${BASEDIR}/src/ffmpeg/libavdevice/android_camera.c
+
 ###################################################################
 
 ./configure \
